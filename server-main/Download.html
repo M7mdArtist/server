@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/download.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Download</h1>
+      <div class="logo">
+        <img src="styles/img/server.png" alt="server logo" width="75px" height="75px" />
+      </div>
+      <div class="header-main">
+        <ul>
+          <li title="Home"><a href="index.html" class="switch">home</a></li>
+          <li title="Upload"><a href="upload.html" class="switch">Upload</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="row">
+      <div title="Back">
+        <button type="button" class="back-btn" id="back-btn">
+          <img src="styles/img/back.png" alt="back" />
+        </button>
+      </div>
+      <p>Path:</p>
+      <p>~</p>
+    </div>
+    <main>
+      <div>
+        <div class="info-header">
+            <div id="info-name"><p>File name</p></div>
+            <div class="file-row">
+              <div id="function-buttons">
+                <button id="popupbtn" title='import costum "popup"'><img src="styles/img/upload.png" alt="upload"></button>
+                <button id="clear" title="Clear Files"><img src="styles/img/clear.png" alt="clear"></button>
+              </div>
+            <div class="info">
+              <div id="size"><p>Size</p></div>
+              <div class="type"><p>Type</p></div>
+              <div id="download"><p>Download</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="gallery">
+        
+      </div>
+      <div id="overlay"></div>
+      <div id="popup">
+        <div id="popup-inputs">
+          <label for="fileType">File type:</label>
+          <select name="fileType" id="fileType">
+            <option value="unkown">chose</option>
+            <option value="folder">Folder</option>
+            <option value="png">png</option>
+            <option value="jpg">jpg</option>
+            <option value="exe">exe</option>
+            <option value="pdf">pdf</option>
+            <option value="docs">docs</option>
+            <option value="unkown">other</option>
+          </select>
+          <label for="fileName">name: </label>
+          <input type="text" name="fileName" id="fileName">
+          <label for="fileSize">size: </label>
+          <input id="fileSize" type="number" min="1" />
+          <label for="fileSize">mb</label>
+        </div>
+        <div id="popup-buttons">
+          <button id="submit">Submit</button>
+          <button id="cancel">Cancel</button>
+        </div>
+      </div>
+
+
+<!-- folder:
+          <div class="file-row">
+          <div class="icon"><img src="styles/img/folder.png" alt="folder" /></div>
+          <button class="down-style folder btn">folder name</button>
+          <div class="info">
+            <p>50mb</p>
+            <div class="type"><p>folder</p></div>
+            <button>Download</button>
+          </div>    
+          
+          file:
+                  <div class="file-row">
+          <div class="icon"><img src="styles/img/file.png" alt="file" /></div>
+          <button class="down-style file btn">file name</button>
+          <div class="info">
+            <p>20mb</p>
+            <div class="type"><p>file</p></div>
+            <button>Download</button>
+          </div>
+-->
+    </main>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

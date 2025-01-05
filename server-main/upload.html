@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/upload.css" />
+  </head>
+  <header>
+    <h1>Upload</h1>
+    <div class="logo">
+      <img src="styles/img/server.png" alt="server logo" width="75px" height="75px" />
+    </div>
+    <div class="header-main">
+      <ul>
+        <li><a href="index.html" class="switch">home</a></li>
+        <li><a href="Download.html" class="switch">Download</a></li>
+      </ul>
+    </div>
+  </header>
+  <body>
+    <div class="main">
+      <div class="pos">
+        <label for="upload" class="file-style">chose file</label>
+        <input id="upload" type="file" required />
+      </div>
+      <div class="path">
+        <label for="path" class="path-input">mohammed@192.168.1.137:</label>
+        <input id="path" type="text" placeholder="~/Desktop" required />
+      </div>
+      <div>
+        <p>minuets remaining:</p>
+        <p class="align">mbs:</p>
+        <p class="align">files selected:</p>
+      </div>
+      <div>
+        <p>0% uploaded</p>
+      </div>
+    </div>
+    <div class="main">
+      <div class="submit">
+        <input type="submit" value="send" class="submit-button button-style" />
+      </div>
+    </div>
+  </body>
+</html>
